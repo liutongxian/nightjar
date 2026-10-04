@@ -1,0 +1,17 @@
+{
+  "recordedAt": "2026-10-02T04:35:53.511750+00:00",
+  "nodeVersion": "24.19.0",
+  "cleanInstallCommand": "npm ci --ignore-scripts --no-audit --no-fund --cache /tmp/nightjar-npm-cache --fetch-timeout=20000 --fetch-retries=0",
+  "installResult": "succeeded",
+  "packagesAdded": 133,
+  "lockfileSha256": "ecbe27d90fea66f6ef067ad089cd5cbfb3357eb6a531eada0004dfe090f46be7",
+  "aggregateTests": 48,
+  "passed": 48,
+  "failed": 0,
+  "proofProcessIds": [
+    294,
+    302
+  ],
+  "browserVisualVerification": false,
+  "published": false
+}

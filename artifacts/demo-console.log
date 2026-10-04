@@ -1,0 +1,30 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nightjar-recovery-demo@0.1.0 demo:proof
+> node scripts/demo-proof.mjs
+
+NIGHTJAR — REPRODUCIBLE CLI PROOF
+Real MCP Streamable HTTP. Synthetic travel and approval fixtures.
+This transcript is generated from execution, not a demo video.
+
+01. Initialized official MCP client and discovered tools
+    {"protocol":"2025-11-25","toolNames":["get_recovery_state","plan_recovery","execute_recovery"],"approvalTool":false}
+02. Planned one connected recovery
+    {"version":1,"total":234,"arrival":"2026-10-23T00:45:00-07:00","counts":{"hotel":0,"flights":0,"transfers":0,"transferCreateRequests":0,"transferLookups":0}}
+03. Execution without approval was blocked
+    {"code":"APPROVAL_REQUIRED","counts":{"hotel":0,"flights":0,"transfers":0,"transferCreateRequests":0,"transferLookups":0}}
+04. Synthetic approval fixture applied through the separate HTTP workflow
+    {"planVersion":1,"limit":234,"source":"automated test fixture, not an MCP tool or a real human decision"}
+05. Supplier saved one transfer but its response was lost
+    {"status":"needs-retry","steps":[{"id":"hotel","status":"confirmed","receipt":"HT-REC-0001"},{"id":"flight","status":"confirmed","receipt":"FL-REC-0001"},{"id":"ground","status":"unknown","receipt":null}],"counts":{"hotel":1,"flights":1,"transfers":1,"transferCreateRequests":1,"transferLookups":0}}
+06. Restarted HTTP app and reconstructed engine from disk
+    {"status":"needs-retry","counts":{"hotel":1,"flights":1,"transfers":1,"transferCreateRequests":1,"transferLookups":0},"restartBoundary":"new HTTP server and RecoveryEngine instance; same Node process"}
+07. Reconciled the existing transfer without creating another
+    {"status":"completed","receipts":["HT-REC-0001","FL-REC-0001","GR-REC-0001"],"counts":{"hotel":1,"flights":1,"transfers":1,"transferCreateRequests":1,"transferLookups":1}}
+08. Repeated execution leaves supplier counts unchanged
+    {"counts":{"hotel":1,"flights":1,"transfers":1,"transferCreateRequests":1,"transferLookups":1}}
+09. Synthetic approval fixture applied through the separate HTTP workflow
+    {"planVersion":2,"limit":234,"source":"automated test fixture, not an MCP tool or a real human decision"}
+10. Transfer repricing requires a new plan and fresh consent
+    {"oldVersion":2,"newVersion":3,"newTotal":269,"oldApprovalStatus":"invalidated","counts":{"hotel":0,"flights":0,"transfers":0,"transferCreateRequests":0,"transferLookups":0}}
+Proof run passed; transcript and JSON saved.

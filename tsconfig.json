@@ -1,0 +1,1 @@
+{"compilerOptions":{"allowJs":true,"checkJs":true,"noEmit":true,"target":"ES2023","module":"NodeNext","moduleResolution":"NodeNext","strict":false,"lib":["ES2023","DOM"],"skipLibCheck":true},"include":["src/*.mjs","src/contracts.ts","public/app.js"]}

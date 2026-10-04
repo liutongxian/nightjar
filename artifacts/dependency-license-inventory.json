@@ -1,0 +1,1219 @@
+{
+  "reviewDate": "2026-10-04",
+  "source": "package-lock.json",
+  "lockfileSha256": "4eecc25c5e09789543f63937b16d126b60a2ff06c18a3fbce0f98af99b0d910b",
+  "scope": "Lockfile metadata only. Package archive LICENSE and NOTICE texts were not retrieved or reviewed. This is not a license compliance or legal opinion.",
+  "dependencyEntryCount": 133,
+  "runtimeEntryCount": 94,
+  "developmentEntryCount": 39,
+  "licenseCounts": {
+    "Apache-2.0": 2,
+    "BSD-2-Clause": 3,
+    "BSD-3-Clause": 4,
+    "BlueOak-1.0.0": 1,
+    "CC0-1.0": 1,
+    "ISC": 8,
+    "MIT": 112,
+    "MIT-0": 2
+  },
+  "dependencies": [
+    {
+      "package": "@asamuzakjp/css-color",
+      "version": "7.1.2",
+      "installPath": "node_modules/@asamuzakjp/css-color",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^22.22.2 || ^24.15.0 || >=26.0.0"
+    },
+    {
+      "package": "@asamuzakjp/dom-selector",
+      "version": "9.2.2",
+      "installPath": "node_modules/@asamuzakjp/dom-selector",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^22.22.2 || ^24.15.0 || >=26.0.0"
+    },
+    {
+      "package": "@bramus/specificity",
+      "version": "2.4.2",
+      "installPath": "node_modules/@bramus/specificity",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "@csstools/color-helpers",
+      "version": "6.1.2",
+      "installPath": "node_modules/@csstools/color-helpers",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT-0",
+      "nodeEngine": ">=20.19.0"
+    },
+    {
+      "package": "@csstools/css-calc",
+      "version": "3.4.2",
+      "installPath": "node_modules/@csstools/css-calc",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20.19.0"
+    },
+    {
+      "package": "@csstools/css-color-parser",
+      "version": "4.2.5",
+      "installPath": "node_modules/@csstools/css-color-parser",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20.19.0"
+    },
+    {
+      "package": "@csstools/css-parser-algorithms",
+      "version": "4.0.2",
+      "installPath": "node_modules/@csstools/css-parser-algorithms",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20.19.0"
+    },
+    {
+      "package": "@csstools/css-syntax-patches-for-csstree",
+      "version": "1.1.15",
+      "installPath": "node_modules/@csstools/css-syntax-patches-for-csstree",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT-0",
+      "nodeEngine": null
+    },
+    {
+      "package": "@csstools/css-tokenizer",
+      "version": "4.0.2",
+      "installPath": "node_modules/@csstools/css-tokenizer",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20.19.0"
+    },
+    {
+      "package": "@exodus/bytes",
+      "version": "1.16.0",
+      "installPath": "node_modules/@exodus/bytes",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^20.19.0 || ^22.12.0 || >=24.0.0"
+    },
+    {
+      "package": "@hono/node-server",
+      "version": "2.1.3",
+      "installPath": "node_modules/@hono/node-server",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20"
+    },
+    {
+      "package": "@modelcontextprotocol/sdk",
+      "version": "1.31.0",
+      "installPath": "node_modules/@modelcontextprotocol/sdk",
+      "dependencyKind": "runtime",
+      "direct": true,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "@types/node",
+      "version": "24.19.0",
+      "installPath": "node_modules/@types/node",
+      "dependencyKind": "development",
+      "direct": true,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "accepts",
+      "version": "2.0.0",
+      "installPath": "node_modules/accepts",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "ajv",
+      "version": "8.20.0",
+      "installPath": "node_modules/ajv",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "ajv-formats",
+      "version": "3.0.1",
+      "installPath": "node_modules/ajv-formats",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "bidi-js",
+      "version": "1.1.0",
+      "installPath": "node_modules/bidi-js",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "body-parser",
+      "version": "2.3.0",
+      "installPath": "node_modules/body-parser",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "content-type",
+      "version": "2.1.0",
+      "installPath": "node_modules/body-parser/node_modules/content-type",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "bytes",
+      "version": "3.1.2",
+      "installPath": "node_modules/bytes",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "call-bind-apply-helpers",
+      "version": "1.0.2",
+      "installPath": "node_modules/call-bind-apply-helpers",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "call-bound",
+      "version": "1.0.4",
+      "installPath": "node_modules/call-bound",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "content-disposition",
+      "version": "1.1.0",
+      "installPath": "node_modules/content-disposition",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "content-type",
+      "version": "1.0.5",
+      "installPath": "node_modules/content-type",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "cookie",
+      "version": "0.7.2",
+      "installPath": "node_modules/cookie",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "cookie-signature",
+      "version": "1.2.2",
+      "installPath": "node_modules/cookie-signature",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=6.6.0"
+    },
+    {
+      "package": "cors",
+      "version": "2.8.6",
+      "installPath": "node_modules/cors",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.10"
+    },
+    {
+      "package": "cross-spawn",
+      "version": "7.0.6",
+      "installPath": "node_modules/cross-spawn",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 8"
+    },
+    {
+      "package": "css-tree",
+      "version": "3.2.1",
+      "installPath": "node_modules/css-tree",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^10 || ^12.20.0 || ^14.13.0 || >=15.0.0"
+    },
+    {
+      "package": "data-urls",
+      "version": "7.0.0",
+      "installPath": "node_modules/data-urls",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^20.19.0 || ^22.12.0 || >=24.0.0"
+    },
+    {
+      "package": "whatwg-url",
+      "version": "16.0.1",
+      "installPath": "node_modules/data-urls/node_modules/whatwg-url",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^20.19.0 || ^22.12.0 || >=24.0.0"
+    },
+    {
+      "package": "debug",
+      "version": "4.4.3",
+      "installPath": "node_modules/debug",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=6.0"
+    },
+    {
+      "package": "decimal.js",
+      "version": "10.6.0",
+      "installPath": "node_modules/decimal.js",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "depd",
+      "version": "2.0.0",
+      "installPath": "node_modules/depd",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "dunder-proto",
+      "version": "1.0.1",
+      "installPath": "node_modules/dunder-proto",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "ee-first",
+      "version": "1.1.1",
+      "installPath": "node_modules/ee-first",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "encodeurl",
+      "version": "2.0.0",
+      "installPath": "node_modules/encodeurl",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "entities",
+      "version": "8.1.0",
+      "installPath": "node_modules/entities",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "BSD-2-Clause",
+      "nodeEngine": ">=20.19.0"
+    },
+    {
+      "package": "es-define-property",
+      "version": "1.0.1",
+      "installPath": "node_modules/es-define-property",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "es-errors",
+      "version": "1.3.0",
+      "installPath": "node_modules/es-errors",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "es-object-atoms",
+      "version": "1.1.2",
+      "installPath": "node_modules/es-object-atoms",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "escape-html",
+      "version": "1.0.3",
+      "installPath": "node_modules/escape-html",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "etag",
+      "version": "1.8.1",
+      "installPath": "node_modules/etag",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "eventsource",
+      "version": "3.0.7",
+      "installPath": "node_modules/eventsource",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18.0.0"
+    },
+    {
+      "package": "eventsource-parser",
+      "version": "3.1.1",
+      "installPath": "node_modules/eventsource-parser",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18.0.0"
+    },
+    {
+      "package": "express",
+      "version": "5.2.1",
+      "installPath": "node_modules/express",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 18"
+    },
+    {
+      "package": "express-rate-limit",
+      "version": "8.7.0",
+      "installPath": "node_modules/express-rate-limit",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 16"
+    },
+    {
+      "package": "fast-deep-equal",
+      "version": "3.1.3",
+      "installPath": "node_modules/fast-deep-equal",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "fast-uri",
+      "version": "3.1.8",
+      "installPath": "node_modules/fast-uri",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "BSD-3-Clause",
+      "nodeEngine": null
+    },
+    {
+      "package": "finalhandler",
+      "version": "2.1.1",
+      "installPath": "node_modules/finalhandler",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 18.0.0"
+    },
+    {
+      "package": "forwarded",
+      "version": "0.2.0",
+      "installPath": "node_modules/forwarded",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "fresh",
+      "version": "2.0.0",
+      "installPath": "node_modules/fresh",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "function-bind",
+      "version": "1.1.2",
+      "installPath": "node_modules/function-bind",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "get-intrinsic",
+      "version": "1.3.0",
+      "installPath": "node_modules/get-intrinsic",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "get-proto",
+      "version": "1.0.1",
+      "installPath": "node_modules/get-proto",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "gopd",
+      "version": "1.2.0",
+      "installPath": "node_modules/gopd",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "has-symbols",
+      "version": "1.1.0",
+      "installPath": "node_modules/has-symbols",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "hasown",
+      "version": "2.0.4",
+      "installPath": "node_modules/hasown",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "hono",
+      "version": "4.13.12",
+      "installPath": "node_modules/hono",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=16.9.0"
+    },
+    {
+      "package": "html-encoding-sniffer",
+      "version": "7.0.0",
+      "installPath": "node_modules/html-encoding-sniffer",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^22.13.0 || >=24.0.0"
+    },
+    {
+      "package": "http-errors",
+      "version": "2.0.1",
+      "installPath": "node_modules/http-errors",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "iconv-lite",
+      "version": "0.7.3",
+      "installPath": "node_modules/iconv-lite",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=0.10.0"
+    },
+    {
+      "package": "inherits",
+      "version": "2.0.4",
+      "installPath": "node_modules/inherits",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": null
+    },
+    {
+      "package": "ip-address",
+      "version": "10.7.2",
+      "installPath": "node_modules/ip-address",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 12"
+    },
+    {
+      "package": "ipaddr.js",
+      "version": "1.9.1",
+      "installPath": "node_modules/ipaddr.js",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.10"
+    },
+    {
+      "package": "is-potential-custom-element-name",
+      "version": "1.0.1",
+      "installPath": "node_modules/is-potential-custom-element-name",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "is-promise",
+      "version": "4.0.0",
+      "installPath": "node_modules/is-promise",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "isexe",
+      "version": "2.0.0",
+      "installPath": "node_modules/isexe",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": null
+    },
+    {
+      "package": "jose",
+      "version": "6.2.12",
+      "installPath": "node_modules/jose",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "jsdom",
+      "version": "30.1.1",
+      "installPath": "node_modules/jsdom",
+      "dependencyKind": "development",
+      "direct": true,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^22.22.2 || ^24.15.0 || >=26.0.0"
+    },
+    {
+      "package": "json-schema-traverse",
+      "version": "1.0.0",
+      "installPath": "node_modules/json-schema-traverse",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "json-schema-typed",
+      "version": "8.0.2",
+      "installPath": "node_modules/json-schema-typed",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "BSD-2-Clause",
+      "nodeEngine": null
+    },
+    {
+      "package": "lru-cache",
+      "version": "11.5.3",
+      "installPath": "node_modules/lru-cache",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "BlueOak-1.0.0",
+      "nodeEngine": "20 || >=22"
+    },
+    {
+      "package": "math-intrinsics",
+      "version": "1.1.0",
+      "installPath": "node_modules/math-intrinsics",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "mdn-data",
+      "version": "2.27.1",
+      "installPath": "node_modules/mdn-data",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "CC0-1.0",
+      "nodeEngine": null
+    },
+    {
+      "package": "media-typer",
+      "version": "1.1.1",
+      "installPath": "node_modules/media-typer",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "merge-descriptors",
+      "version": "2.0.0",
+      "installPath": "node_modules/merge-descriptors",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "mime-db",
+      "version": "1.54.0",
+      "installPath": "node_modules/mime-db",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "mime-types",
+      "version": "3.0.2",
+      "installPath": "node_modules/mime-types",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "ms",
+      "version": "2.1.3",
+      "installPath": "node_modules/ms",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "negotiator",
+      "version": "1.1.0",
+      "installPath": "node_modules/negotiator",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "content-type",
+      "version": "2.1.0",
+      "installPath": "node_modules/negotiator/node_modules/content-type",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "object-assign",
+      "version": "4.1.1",
+      "installPath": "node_modules/object-assign",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=0.10.0"
+    },
+    {
+      "package": "object-inspect",
+      "version": "1.13.4",
+      "installPath": "node_modules/object-inspect",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "on-finished",
+      "version": "2.4.1",
+      "installPath": "node_modules/on-finished",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "once",
+      "version": "1.4.0",
+      "installPath": "node_modules/once",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": null
+    },
+    {
+      "package": "parse5",
+      "version": "8.0.1",
+      "installPath": "node_modules/parse5",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "parseurl",
+      "version": "1.3.3",
+      "installPath": "node_modules/parseurl",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "path-key",
+      "version": "3.1.1",
+      "installPath": "node_modules/path-key",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=8"
+    },
+    {
+      "package": "path-to-regexp",
+      "version": "8.4.2",
+      "installPath": "node_modules/path-to-regexp",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "pkce-challenge",
+      "version": "5.0.1",
+      "installPath": "node_modules/pkce-challenge",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=16.20.0"
+    },
+    {
+      "package": "proxy-addr",
+      "version": "2.0.8",
+      "installPath": "node_modules/proxy-addr",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.10"
+    },
+    {
+      "package": "punycode",
+      "version": "2.3.1",
+      "installPath": "node_modules/punycode",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=6"
+    },
+    {
+      "package": "qs",
+      "version": "6.16.0",
+      "installPath": "node_modules/qs",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "BSD-3-Clause",
+      "nodeEngine": ">=0.6"
+    },
+    {
+      "package": "range-parser",
+      "version": "1.3.0",
+      "installPath": "node_modules/range-parser",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.6"
+    },
+    {
+      "package": "raw-body",
+      "version": "3.0.2",
+      "installPath": "node_modules/raw-body",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.10"
+    },
+    {
+      "package": "require-from-string",
+      "version": "2.0.2",
+      "installPath": "node_modules/require-from-string",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=0.10.0"
+    },
+    {
+      "package": "router",
+      "version": "2.2.0",
+      "installPath": "node_modules/router",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 18"
+    },
+    {
+      "package": "safer-buffer",
+      "version": "2.1.2",
+      "installPath": "node_modules/safer-buffer",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "saxes",
+      "version": "6.0.0",
+      "installPath": "node_modules/saxes",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": ">=v12.22.7"
+    },
+    {
+      "package": "send",
+      "version": "1.2.1",
+      "installPath": "node_modules/send",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 18"
+    },
+    {
+      "package": "serve-static",
+      "version": "2.2.1",
+      "installPath": "node_modules/serve-static",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 18"
+    },
+    {
+      "package": "setprototypeof",
+      "version": "1.2.0",
+      "installPath": "node_modules/setprototypeof",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": null
+    },
+    {
+      "package": "shebang-command",
+      "version": "2.0.0",
+      "installPath": "node_modules/shebang-command",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=8"
+    },
+    {
+      "package": "shebang-regex",
+      "version": "3.0.0",
+      "installPath": "node_modules/shebang-regex",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=8"
+    },
+    {
+      "package": "side-channel",
+      "version": "1.1.1",
+      "installPath": "node_modules/side-channel",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "side-channel-list",
+      "version": "1.0.1",
+      "installPath": "node_modules/side-channel-list",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "side-channel-map",
+      "version": "1.0.1",
+      "installPath": "node_modules/side-channel-map",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "side-channel-weakmap",
+      "version": "1.0.2",
+      "installPath": "node_modules/side-channel-weakmap",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.4"
+    },
+    {
+      "package": "source-map-js",
+      "version": "1.2.2",
+      "installPath": "node_modules/source-map-js",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "BSD-3-Clause",
+      "nodeEngine": ">=0.10.0"
+    },
+    {
+      "package": "statuses",
+      "version": "2.0.2",
+      "installPath": "node_modules/statuses",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "tldts",
+      "version": "7.4.16",
+      "installPath": "node_modules/tldts",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "tldts-core",
+      "version": "7.4.16",
+      "installPath": "node_modules/tldts-core",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "toidentifier",
+      "version": "1.0.1",
+      "installPath": "node_modules/toidentifier",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=0.6"
+    },
+    {
+      "package": "tough-cookie",
+      "version": "6.0.2",
+      "installPath": "node_modules/tough-cookie",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "BSD-3-Clause",
+      "nodeEngine": ">=16"
+    },
+    {
+      "package": "tr46",
+      "version": "6.0.0",
+      "installPath": "node_modules/tr46",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20"
+    },
+    {
+      "package": "type-is",
+      "version": "2.1.0",
+      "installPath": "node_modules/type-is",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 18"
+    },
+    {
+      "package": "content-type",
+      "version": "2.1.0",
+      "installPath": "node_modules/type-is/node_modules/content-type",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "typescript",
+      "version": "5.9.3",
+      "installPath": "node_modules/typescript",
+      "dependencyKind": "development",
+      "direct": true,
+      "declaredLicense": "Apache-2.0",
+      "nodeEngine": ">=14.17"
+    },
+    {
+      "package": "undici",
+      "version": "8.11.2",
+      "installPath": "node_modules/undici",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=22.19.0"
+    },
+    {
+      "package": "undici-types",
+      "version": "7.24.6",
+      "installPath": "node_modules/undici-types",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "unpipe",
+      "version": "1.0.0",
+      "installPath": "node_modules/unpipe",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "vary",
+      "version": "1.1.2",
+      "installPath": "node_modules/vary",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">= 0.8"
+    },
+    {
+      "package": "w3c-xmlserializer",
+      "version": "6.0.0",
+      "installPath": "node_modules/w3c-xmlserializer",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^22.22.2 || ^24.15.0 || >=26.0.0"
+    },
+    {
+      "package": "webidl-conversions",
+      "version": "8.0.1",
+      "installPath": "node_modules/webidl-conversions",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "BSD-2-Clause",
+      "nodeEngine": ">=20"
+    },
+    {
+      "package": "whatwg-mimetype",
+      "version": "5.0.0",
+      "installPath": "node_modules/whatwg-mimetype",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": ">=20"
+    },
+    {
+      "package": "whatwg-url",
+      "version": "17.1.2",
+      "installPath": "node_modules/whatwg-url",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": "^22.14.0 || >=24.0.0"
+    },
+    {
+      "package": "which",
+      "version": "2.0.2",
+      "installPath": "node_modules/which",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": ">= 8"
+    },
+    {
+      "package": "wrappy",
+      "version": "1.0.2",
+      "installPath": "node_modules/wrappy",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": null
+    },
+    {
+      "package": "xml-name-validator",
+      "version": "5.0.0",
+      "installPath": "node_modules/xml-name-validator",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "Apache-2.0",
+      "nodeEngine": ">=18"
+    },
+    {
+      "package": "xmlchars",
+      "version": "2.2.0",
+      "installPath": "node_modules/xmlchars",
+      "dependencyKind": "development",
+      "direct": false,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "zod",
+      "version": "4.6.5",
+      "installPath": "node_modules/zod",
+      "dependencyKind": "runtime",
+      "direct": true,
+      "declaredLicense": "MIT",
+      "nodeEngine": null
+    },
+    {
+      "package": "zod-to-json-schema",
+      "version": "3.25.2",
+      "installPath": "node_modules/zod-to-json-schema",
+      "dependencyKind": "runtime",
+      "direct": false,
+      "declaredLicense": "ISC",
+      "nodeEngine": null
+    }
+  ],
+  "publicationReview": "All dependency versions and license entries rechecked for the MIT source release. No dependency code is bundled; upstream package LICENSE/NOTICE texts were not retrieved."
+}

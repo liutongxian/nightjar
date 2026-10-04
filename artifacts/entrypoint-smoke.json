@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-10-02T04:34:34.203Z",
+  "disclosure": "Actual CLI server subprocess and loopback HTTP client in one execution context; server stopped afterward. No real travel or AI call.",
+  "health": {
+    "ok": true,
+    "mode": "simulation",
+    "model": "deterministic",
+    "externalCalls": false
+  },
+  "mcpStatus": 200,
+  "protocol": "2025-11-25",
+  "server": {
+    "name": "nightjar-recovery",
+    "version": "0.1.0"
+  }
+}

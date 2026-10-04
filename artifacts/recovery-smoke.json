@@ -1,0 +1,389 @@
+{
+  "disclosure": "Synthetic scenario; actual deterministic engine execution and file-backed RecoveryEngine reconstruction in the same Node process. No live travel, AI model, or Alexa call.",
+  "recordedAt": "2026-10-02T04:34:34.479Z",
+  "stages": {
+    "planned": {
+      "planVersion": 1,
+      "total": 234,
+      "status": "idle",
+      "error": null,
+      "steps": [
+        {
+          "id": "hotel",
+          "title": "Protect late hotel arrival",
+          "status": "pending",
+          "attempts": 0,
+          "reference": null,
+          "receipt": null,
+          "idempotencyKey": "sfo-lax-2026-10-22:hotel:HTL-7721"
+        },
+        {
+          "id": "flight",
+          "title": "Rebook on PA522",
+          "status": "pending",
+          "attempts": 0,
+          "reference": null,
+          "receipt": null,
+          "idempotencyKey": "sfo-lax-2026-10-22:flight:PA522"
+        },
+        {
+          "id": "ground",
+          "title": "Private airport transfer",
+          "status": "pending",
+          "attempts": 0,
+          "reference": null,
+          "receipt": null,
+          "idempotencyKey": "sfo-lax-2026-10-22:ground:standard"
+        }
+      ],
+      "providerCounts": {
+        "airline": {
+          "requests": 0,
+          "reconciliationRequests": 0,
+          "bookings": 0
+        },
+        "ground": {
+          "requests": 0,
+          "reconciliationRequests": 0,
+          "bookings": 0
+        },
+        "hotel": {
+          "requests": 0,
+          "reconciliationRequests": 0,
+          "bookings": 0
+        }
+      },
+      "originalHotel": {
+        "id": "HTL-7721",
+        "status": "confirmed",
+        "prepaid": true,
+        "protected": true,
+        "city": "Los Angeles",
+        "checkInDate": "2026-10-22",
+        "checkOutDate": "2026-10-24",
+        "originalAmount": 218,
+        "lateArrivalDeadline": "2026-10-23T00:00:00-07:00",
+        "lateArrivalProtectedUntil": null
+      },
+      "originalTicket": {
+        "id": "ENT-410",
+        "originalFlightId": "PA410",
+        "status": "preserved",
+        "description": "Original ticket value remains protected; only fare difference is authorized."
+      }
+    },
+    "interrupted": {
+      "planVersion": 1,
+      "total": 234,
+      "status": "needs-retry",
+      "error": {
+        "code": "TRANSPORT_TIMEOUT",
+        "message": "Ground transfer response was lost. Its outcome is unknown to the client. Retry to reconcile before creating anything."
+      },
+      "steps": [
+        {
+          "id": "hotel",
+          "title": "Protect late hotel arrival",
+          "status": "confirmed",
+          "attempts": 1,
+          "reference": "HT-REC-0001",
+          "receipt": {
+            "reference": "HT-REC-0001",
+            "idempotencyKey": "sfo-lax-2026-10-22:hotel:HTL-7721",
+            "optionId": "HTL-7721",
+            "amount": 0,
+            "currency": "USD",
+            "status": "confirmed",
+            "quoteVersion": 1,
+            "planVersion": 1,
+            "approvalLimit": 234,
+            "protectedUntil": "2026-10-23T02:00:00-07:00"
+          },
+          "idempotencyKey": "sfo-lax-2026-10-22:hotel:HTL-7721"
+        },
+        {
+          "id": "flight",
+          "title": "Rebook on PA522",
+          "status": "confirmed",
+          "attempts": 1,
+          "reference": "FL-REC-0001",
+          "receipt": {
+            "reference": "FL-REC-0001",
+            "idempotencyKey": "sfo-lax-2026-10-22:flight:PA522",
+            "optionId": "PA522",
+            "amount": 186,
+            "currency": "USD",
+            "status": "confirmed",
+            "quoteVersion": 1,
+            "planVersion": 1,
+            "approvalLimit": 234,
+            "offer": {
+              "id": "PA522",
+              "label": "Balanced rescue",
+              "departureAt": "2026-10-22T22:25:00-07:00",
+              "arrivalAt": "2026-10-22T23:55:00-07:00",
+              "amount": 186,
+              "available": true,
+              "accessible": true
+            }
+          },
+          "idempotencyKey": "sfo-lax-2026-10-22:flight:PA522"
+        },
+        {
+          "id": "ground",
+          "title": "Private airport transfer",
+          "status": "unknown",
+          "attempts": 1,
+          "reference": null,
+          "receipt": null,
+          "idempotencyKey": "sfo-lax-2026-10-22:ground:standard"
+        }
+      ],
+      "providerCounts": {
+        "airline": {
+          "requests": 1,
+          "reconciliationRequests": 0,
+          "bookings": 1
+        },
+        "ground": {
+          "requests": 1,
+          "reconciliationRequests": 0,
+          "bookings": 1
+        },
+        "hotel": {
+          "requests": 1,
+          "reconciliationRequests": 0,
+          "bookings": 1
+        }
+      },
+      "originalHotel": {
+        "id": "HTL-7721",
+        "status": "confirmed",
+        "prepaid": true,
+        "protected": true,
+        "city": "Los Angeles",
+        "checkInDate": "2026-10-22",
+        "checkOutDate": "2026-10-24",
+        "originalAmount": 218,
+        "lateArrivalDeadline": "2026-10-23T00:00:00-07:00",
+        "lateArrivalProtectedUntil": "2026-10-23T02:00:00-07:00"
+      },
+      "originalTicket": {
+        "id": "ENT-410",
+        "originalFlightId": "PA410",
+        "status": "preserved",
+        "description": "Original ticket value remains protected; only fare difference is authorized."
+      }
+    },
+    "restartedAndRecovered": {
+      "planVersion": 1,
+      "total": 234,
+      "status": "completed",
+      "error": null,
+      "steps": [
+        {
+          "id": "hotel",
+          "title": "Protect late hotel arrival",
+          "status": "confirmed",
+          "attempts": 1,
+          "reference": "HT-REC-0001",
+          "receipt": {
+            "reference": "HT-REC-0001",
+            "idempotencyKey": "sfo-lax-2026-10-22:hotel:HTL-7721",
+            "optionId": "HTL-7721",
+            "amount": 0,
+            "currency": "USD",
+            "status": "confirmed",
+            "quoteVersion": 1,
+            "planVersion": 1,
+            "approvalLimit": 234,
+            "protectedUntil": "2026-10-23T02:00:00-07:00"
+          },
+          "idempotencyKey": "sfo-lax-2026-10-22:hotel:HTL-7721"
+        },
+        {
+          "id": "flight",
+          "title": "Rebook on PA522",
+          "status": "confirmed",
+          "attempts": 1,
+          "reference": "FL-REC-0001",
+          "receipt": {
+            "reference": "FL-REC-0001",
+            "idempotencyKey": "sfo-lax-2026-10-22:flight:PA522",
+            "optionId": "PA522",
+            "amount": 186,
+            "currency": "USD",
+            "status": "confirmed",
+            "quoteVersion": 1,
+            "planVersion": 1,
+            "approvalLimit": 234,
+            "offer": {
+              "id": "PA522",
+              "label": "Balanced rescue",
+              "departureAt": "2026-10-22T22:25:00-07:00",
+              "arrivalAt": "2026-10-22T23:55:00-07:00",
+              "amount": 186,
+              "available": true,
+              "accessible": true
+            }
+          },
+          "idempotencyKey": "sfo-lax-2026-10-22:flight:PA522"
+        },
+        {
+          "id": "ground",
+          "title": "Private airport transfer",
+          "status": "confirmed",
+          "attempts": 1,
+          "reference": "GR-REC-0001",
+          "receipt": {
+            "reference": "GR-REC-0001",
+            "idempotencyKey": "sfo-lax-2026-10-22:ground:standard",
+            "optionId": "standard",
+            "amount": 48,
+            "currency": "USD",
+            "status": "confirmed",
+            "quoteVersion": 1,
+            "planVersion": 1,
+            "approvalLimit": 234,
+            "offer": {
+              "id": "standard",
+              "label": "Private airport transfer",
+              "amount": 48,
+              "available": true,
+              "accessible": false,
+              "durationMinutes": 35
+            },
+            "pickupAt": "2026-10-23T00:10:00-07:00",
+            "arrivalAt": "2026-10-23T00:45:00-07:00"
+          },
+          "idempotencyKey": "sfo-lax-2026-10-22:ground:standard"
+        }
+      ],
+      "providerCounts": {
+        "airline": {
+          "requests": 1,
+          "reconciliationRequests": 0,
+          "bookings": 1
+        },
+        "ground": {
+          "requests": 1,
+          "reconciliationRequests": 1,
+          "bookings": 1
+        },
+        "hotel": {
+          "requests": 1,
+          "reconciliationRequests": 0,
+          "bookings": 1
+        }
+      },
+      "originalHotel": {
+        "id": "HTL-7721",
+        "status": "confirmed",
+        "prepaid": true,
+        "protected": true,
+        "city": "Los Angeles",
+        "checkInDate": "2026-10-22",
+        "checkOutDate": "2026-10-24",
+        "originalAmount": 218,
+        "lateArrivalDeadline": "2026-10-23T00:00:00-07:00",
+        "lateArrivalProtectedUntil": "2026-10-23T02:00:00-07:00"
+      },
+      "originalTicket": {
+        "id": "ENT-410",
+        "originalFlightId": "PA410",
+        "status": "preserved",
+        "description": "Original ticket value remains protected; only fare difference is authorized."
+      }
+    }
+  },
+  "events": [
+    {
+      "id": "evt-1",
+      "at": "2026-10-22T20:40:00-07:00",
+      "type": "scenario.loaded",
+      "title": "Flight cancellation detected",
+      "detail": "PA410 is cancelled. Original ticket entitlement and prepaid Los Angeles hotel are protected."
+    },
+    {
+      "id": "evt-2",
+      "at": "2026-10-22T20:40:01-07:00",
+      "type": "plan.created",
+      "title": "Plan v1 is ready for review",
+      "detail": "$234 total incremental cost. All three provider actions require this plan’s approval.",
+      "planVersion": 1
+    },
+    {
+      "id": "evt-3",
+      "at": "2026-10-22T20:40:02-07:00",
+      "type": "plan.approved",
+      "title": "Plan v1 approved",
+      "detail": "Explicit authorization: up to $234 USD for the listed three simulated provider actions.",
+      "planVersion": 1
+    },
+    {
+      "id": "evt-4",
+      "at": "2026-10-22T20:40:03-07:00",
+      "type": "fault.injected",
+      "title": "Simulation: transport-timeout",
+      "detail": "The next new ground booking will commit, then lose its response once."
+    },
+    {
+      "id": "evt-5",
+      "at": "2026-10-22T20:40:04-07:00",
+      "type": "execution.started",
+      "title": "Recovery execution started",
+      "detail": "Hotel protection → flight rebooking → ground transfer. Existing commitments are retained on failure.",
+      "planVersion": 1
+    },
+    {
+      "id": "evt-6",
+      "at": "2026-10-22T20:40:05-07:00",
+      "type": "booking.confirmed",
+      "title": "Protect late hotel arrival: confirmed",
+      "detail": "HT-REC-0001 · $0 USD.",
+      "stepId": "hotel",
+      "reference": "HT-REC-0001"
+    },
+    {
+      "id": "evt-7",
+      "at": "2026-10-22T20:40:06-07:00",
+      "type": "booking.confirmed",
+      "title": "Rebook on PA522: confirmed",
+      "detail": "FL-REC-0001 · $186 USD.",
+      "stepId": "flight",
+      "reference": "FL-REC-0001"
+    },
+    {
+      "id": "evt-8",
+      "at": "2026-10-22T20:40:07-07:00",
+      "type": "booking.response_lost",
+      "title": "Ground transfer response lost",
+      "detail": "The simulated provider committed the booking, but its response never reached the client. Durable lookup will determine the outcome.",
+      "stepId": "ground"
+    },
+    {
+      "id": "evt-9",
+      "at": "2026-10-22T20:40:08-07:00",
+      "type": "execution.started",
+      "title": "Recovery execution started",
+      "detail": "Hotel protection → flight rebooking → ground transfer. Existing commitments are retained on failure.",
+      "planVersion": 1
+    },
+    {
+      "id": "evt-10",
+      "at": "2026-10-22T20:40:09-07:00",
+      "type": "booking.reconciled",
+      "title": "Private airport transfer: booking found",
+      "detail": "Recovered GR-REC-0001 by its durable idempotency key. No second booking or charge.",
+      "stepId": "ground",
+      "reference": "GR-REC-0001"
+    },
+    {
+      "id": "evt-11",
+      "at": "2026-10-22T20:40:10-07:00",
+      "type": "execution.completed",
+      "title": "Your recovery is confirmed",
+      "detail": "All three provider outcomes verified. Total incremental cost: $234 USD. Original ticket entitlement and prepaid hotel remain protected."
+    }
+  ]
+}

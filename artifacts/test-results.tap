@@ -1,0 +1,300 @@
+TAP version 13
+# Subtest: default plan respects all cross-provider timing and cost constraints
+ok 1 - default plan respects all cross-provider timing and cost constraints
+  ---
+  duration_ms: 2.949201
+  type: 'test'
+  ...
+# Subtest: alternatives explain budget, hotel deadline, and missed airport cutoff
+ok 2 - alternatives explain budget, hotel deadline, and missed airport cutoff
+  ---
+  duration_ms: 0.590042
+  type: 'test'
+  ...
+# Subtest: no provider is mutated by execute without matching explicit approval
+ok 3 - no provider is mutated by execute without matching explicit approval
+  ---
+  duration_ms: 0.9064
+  type: 'test'
+  ...
+# Subtest: successful execution protects hotel first and preserves original entitlements
+ok 4 - successful execution protects hotel first and preserves original entitlements
+  ---
+  duration_ms: 2.173433
+  type: 'test'
+  ...
+# Subtest: approval is version-bound, and replanning invalidates the old approval
+ok 5 - approval is version-bound, and replanning invalidates the old approval
+  ---
+  duration_ms: 0.923806
+  type: 'test'
+  ...
+# Subtest: spending authorization must cover the exact plan and stay in budget
+ok 6 - spending authorization must cover the exact plan and stay in budget
+  ---
+  duration_ms: 0.778671
+  type: 'test'
+  ...
+# Subtest: changed prices invalidate approval even when the new total is under budget
+ok 7 - changed prices invalidate approval even when the new total is under budget
+  ---
+  duration_ms: 1.760393
+  type: 'test'
+  ...
+# Subtest: sold-out flight blocks execution; explicit relaxed budget enables a different plan
+ok 8 - sold-out flight blocks execution; explicit relaxed budget enables a different plan
+  ---
+  duration_ms: 1.057503
+  type: 'test'
+  ...
+# Subtest: accessibility is enforced end-to-end and the accessible transfer is priced
+ok 9 - accessibility is enforced end-to-end and the accessible transfer is priced
+  ---
+  duration_ms: 0.436986
+  type: 'test'
+  ...
+# Subtest: HH:mm latest arrival handles midnight; unsatisfiable constraints never authorize action
+ok 10 - HH:mm latest arrival handles midnight; unsatisfiable constraints never authorize action
+  ---
+  duration_ms: 0.958957
+  type: 'test'
+  ...
+# Subtest: lost transport response commits once, retry reconciles by idempotency key
+ok 11 - lost transport response commits once, retry reconciles by idempotency key
+  ---
+  duration_ms: 1.248736
+  type: 'test'
+  ...
+# Subtest: engine reconstruction from disk restores unknown outcome and safely finishes the chain
+ok 12 - engine reconstruction from disk restores unknown outcome and safely finishes the chain
+  ---
+  duration_ms: 4.033914
+  type: 'test'
+  ...
+# Subtest: repeated execute clicks are a no-op after completion
+ok 13 - repeated execute clicks are a no-op after completion
+  ---
+  duration_ms: 1.882243
+  type: 'test'
+  ...
+# Subtest: supplier changes cannot change committed prices or duplicate recovered bookings
+ok 14 - supplier changes cannot change committed prices or duplicate recovered bookings
+  ---
+  duration_ms: 1.409494
+  type: 'test'
+  ...
+# Subtest: public state is detached; fixture and execution traces are deterministic
+ok 15 - public state is detached; fixture and execution traces are deterministic
+  ---
+  duration_ms: 1.732291
+  type: 'test'
+  ...
+# Subtest: persistence failure rolls in-memory state back before any step can proceed
+ok 16 - persistence failure rolls in-memory state back before any step can proceed
+  ---
+  duration_ms: 1.1636
+  type: 'test'
+  ...
+# Subtest: reset clears the demo and invalid inputs cannot silently alter state
+ok 17 - reset clears the demo and invalid inputs cannot silently alter state
+  ---
+  duration_ms: 1.762747
+  type: 'test'
+  ...
+# Subtest: reset preserves unique plan versions and rejects delayed approvals and execution
+ok 18 - reset preserves unique plan versions and rejects delayed approvals and execution
+  ---
+  duration_ms: 1.511735
+  type: 'test'
+  ...
+# Subtest: reset plan-version boundary survives persistence and restart
+ok 19 - reset plan-version boundary survives persistence and restart
+  ---
+  duration_ms: 2.335343
+  type: 'test'
+  ...
+# Subtest: corrupt persisted state is reported rather than silently overwriting commitments
+ok 20 - corrupt persisted state is reported rather than silently overwriting commitments
+  ---
+  duration_ms: 0.386301
+  type: 'test'
+  ...
+# Subtest: infeasible replan preserves confirmed receipts and an unknown ground outcome
+ok 21 - infeasible replan preserves confirmed receipts and an unknown ground outcome
+  ---
+  duration_ms: 1.591002
+  type: 'test'
+  ...
+# Subtest: official MCP SDK client exercises real Streamable HTTP, human gate, and retry recovery
+    # Subtest: initialize negotiates 2025-11-25 or newer and lists only permitted tools
+    ok 1 - initialize negotiates 2025-11-25 or newer and lists only permitted tools
+      ---
+      duration_ms: 75.766496
+      type: 'test'
+      ...
+    # Subtest: planning uses tool inputs and execution requires prior version-bound human approval
+    ok 2 - planning uses tool inputs and execution requires prior version-bound human approval
+      ---
+      duration_ms: 36.667766
+      type: 'test'
+      ...
+    # Subtest: strict input schemas cannot smuggle approval and replanning revokes it
+    ok 3 - strict input schemas cannot smuggle approval and replanning revokes it
+      ---
+      duration_ms: 18.699809
+      type: 'test'
+      ...
+    # Subtest: actual MCP tool calls reconcile a simulated supplier lost response without duplicates
+    ok 4 - actual MCP tool calls reconcile a simulated supplier lost response without duplicates
+      ---
+      duration_ms: 21.749017
+      type: 'test'
+      ...
+    # Subtest: a discarded real MCP HTTP response can be retried safely
+    ok 5 - a discarded real MCP HTTP response can be retried safely
+      ---
+      duration_ms: 17.105091
+      type: 'test'
+      ...
+    # Subtest: HTTP boundaries reject remote origins, rebinding hosts, invalid versions, and large bodies
+    ok 6 - HTTP boundaries reject remote origins, rebinding hosts, invalid versions, and large bodies
+      ---
+      duration_ms: 17.49646
+      type: 'test'
+      ...
+    1..6
+ok 22 - official MCP SDK client exercises real Streamable HTTP, human gate, and retry recovery
+  ---
+  duration_ms: 207.745247
+  type: 'test'
+  ...
+# Recorded real MCP HTTP evidence: <project-root>/artifacts/mcp-smoke.json
+# Subtest: actual CLI process can be killed and a new process reconciles the durable unknown booking
+ok 23 - actual CLI process can be killed and a new process reconciles the durable unknown booking
+  ---
+  duration_ms: 577.644896
+  type: 'test'
+  ...
+# Subtest: HTTP serves the product and explicitly labels simulation
+ok 24 - HTTP serves the product and explicitly labels simulation
+  ---
+  duration_ms: 28.924887
+  type: 'test'
+  ...
+# Subtest: HTTP happy path requires approval, finishes once, and exports evidence
+ok 25 - HTTP happy path requires approval, finishes once, and exports evidence
+  ---
+  duration_ms: 30.864505
+  type: 'test'
+  ...
+# Subtest: HTTP recovers lost supplier response without another reservation
+ok 26 - HTTP recovers lost supplier response without another reservation
+  ---
+  duration_ms: 16.505855
+  type: 'test'
+  ...
+# Subtest: HTTP rejects stale approval after supplier price change
+ok 27 - HTTP rejects stale approval after supplier price change
+  ---
+  duration_ms: 9.681514
+  type: 'test'
+  ...
+# Subtest: HTTP rejects malformed JSON and invalid constraints cleanly
+ok 28 - HTTP rejects malformed JSON and invalid constraints cleanly
+  ---
+  duration_ms: 9.045124
+  type: 'test'
+  ...
+# Subtest: HTTP refuses cross-origin mutations, non-JSON bodies, and oversized input
+ok 29 - HTTP refuses cross-origin mutations, non-JSON bodies, and oversized input
+  ---
+  duration_ms: 5.707098
+  type: 'test'
+  ...
+# Subtest: HTTP does not expose runtime state files or source files
+ok 30 - HTTP does not expose runtime state files or source files
+  ---
+  duration_ms: 6.18175
+  type: 'test'
+  ...
+# Subtest: HTTP rejects unrelated Host authorities to resist DNS rebinding
+ok 31 - HTTP rejects unrelated Host authorities to resist DNS rebinding
+  ---
+  duration_ms: 4.442168
+  type: 'test'
+  ...
+# Subtest: UI builds a plan, requires an explicit checkbox, and executes the approved simulation
+ok 32 - UI builds a plan, requires an explicit checkbox, and executes the approved simulation
+  ---
+  duration_ms: 247.181847
+  type: 'test'
+  ...
+# Subtest: UI close/back from approval leaves provider state unchanged
+ok 33 - UI close/back from approval leaves provider state unchanged
+  ---
+  duration_ms: 50.189078
+  type: 'test'
+  ...
+# Subtest: UI changed constraints hide execution until a new plan and approval
+ok 34 - UI changed constraints hide execution until a new plan and approval
+  ---
+  duration_ms: 83.301728
+  type: 'test'
+  ...
+# Subtest: UI safely resumes after a lost response, and a new page restores the checkpoint
+ok 35 - UI safely resumes after a lost response, and a new page restores the checkpoint
+  ---
+  duration_ms: 97.004479
+  type: 'test'
+  ...
+# Subtest: UI price change invalidates approval and allows refreshing and reapproving
+ok 36 - UI price change invalidates approval and allows refreshing and reapproving
+  ---
+  duration_ms: 90.629262
+  type: 'test'
+  ...
+# Subtest: UI blocked constraints do not offer approval, reset restores an operable empty state
+ok 37 - UI blocked constraints do not offer approval, reset restores an operable empty state
+  ---
+  duration_ms: 52.315392
+  type: 'test'
+  ...
+# Subtest: UI escapes provider and event text instead of inserting HTML
+ok 38 - UI escapes provider and event text instead of inserting HTML
+  ---
+  duration_ms: 27.908865
+  type: 'test'
+  ...
+# Subtest: UI describes the hotel hold as proposed until a receipt confirms it
+ok 39 - UI describes the hotel hold as proposed until a receipt confirms it
+  ---
+  duration_ms: 53.052472
+  type: 'test'
+  ...
+# Subtest: UI labels a same-night arrival correctly
+ok 40 - UI labels a same-night arrival correctly
+  ---
+  duration_ms: 27.128241
+  type: 'test'
+  ...
+# Subtest: UI locks boundaries while planning and prevents duplicate clicks
+ok 41 - UI locks boundaries while planning and prevents duplicate clicks
+  ---
+  duration_ms: 28.951266
+  type: 'test'
+  ...
+# Subtest: UI recovers a discarded successful HTTP response by checking saved state
+ok 42 - UI recovers a discarded successful HTTP response by checking saved state
+  ---
+  duration_ms: 62.619327
+  type: 'test'
+  ...
+1..42
+# tests 48
+# suites 0
+# pass 48
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1488.5414

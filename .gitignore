@@ -1,0 +1,12 @@
+node_modules/
+.runtime/
+.env*
+!.env.example
+artifacts/*.webm
+artifacts/*.mp4
+.DS_Store
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc

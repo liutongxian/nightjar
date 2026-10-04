@@ -1,0 +1,79 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nightjar-recovery-demo@0.1.0 check
+> npm run lint && npm run typecheck && npm test
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nightjar-recovery-demo@0.1.0 lint
+> node scripts/lint.mjs
+
+Syntax/security lint passed for 17 JavaScript files. This is a project-specific check, not ESLint.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nightjar-recovery-demo@0.1.0 typecheck
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> nightjar-recovery-demo@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ default plan respects all cross-provider timing and cost constraints (3.19252ms)
+✔ alternatives explain budget, hotel deadline, and missed airport cutoff (0.523965ms)
+✔ no provider is mutated by execute without matching explicit approval (0.840533ms)
+✔ successful execution protects hotel first and preserves original entitlements (2.938285ms)
+✔ approval is version-bound, and replanning invalidates the old approval (0.888183ms)
+✔ spending authorization must cover the exact plan and stay in budget (0.79757ms)
+✔ changed prices invalidate approval even when the new total is under budget (1.814122ms)
+✔ sold-out flight blocks execution; explicit relaxed budget enables a different plan (1.871708ms)
+✔ accessibility is enforced end-to-end and the accessible transfer is priced (0.458408ms)
+✔ HH:mm latest arrival handles midnight; unsatisfiable constraints never authorize action (0.877708ms)
+✔ lost transport response commits once, retry reconciles by idempotency key (1.39962ms)
+✔ engine reconstruction from disk restores unknown outcome and safely finishes the chain (3.777986ms)
+✔ repeated execute clicks are a no-op after completion (1.713273ms)
+✔ supplier changes cannot change committed prices or duplicate recovered bookings (1.320893ms)
+✔ public state is detached; fixture and execution traces are deterministic (1.725491ms)
+✔ persistence failure rolls in-memory state back before any step can proceed (1.029732ms)
+✔ reset clears the demo and invalid inputs cannot silently alter state (1.522992ms)
+✔ reset preserves unique plan versions and rejects delayed approvals and execution (1.471897ms)
+✔ reset plan-version boundary survives persistence and restart (1.761304ms)
+✔ corrupt persisted state is reported rather than silently overwriting commitments (0.415855ms)
+✔ infeasible replan preserves confirmed receipts and an unknown ground outcome (1.860471ms)
+▶ official MCP SDK client exercises real Streamable HTTP, human gate, and retry recovery
+  ✔ initialize negotiates 2025-11-25 or newer and lists only permitted tools (92.230213ms)
+  ✔ planning uses tool inputs and execution requires prior version-bound human approval (48.722491ms)
+  ✔ strict input schemas cannot smuggle approval and replanning revokes it (18.893937ms)
+  ✔ actual MCP tool calls reconcile a simulated supplier lost response without duplicates (21.27028ms)
+  ✔ a discarded real MCP HTTP response can be retried safely (15.591284ms)
+  ✔ HTTP boundaries reject remote origins, rebinding hosts, invalid versions, and large bodies (17.211279ms)
+✔ official MCP SDK client exercises real Streamable HTTP, human gate, and retry recovery (238.406431ms)
+ℹ Recorded real MCP HTTP evidence: <project-root>/artifacts/mcp-smoke.json
+✔ actual CLI process can be killed and a new process reconciles the durable unknown booking (518.864486ms)
+✔ HTTP serves the product and explicitly labels simulation (43.609862ms)
+✔ HTTP happy path requires approval, finishes once, and exports evidence (35.200889ms)
+✔ HTTP recovers lost supplier response without another reservation (21.807255ms)
+✔ HTTP rejects stale approval after supplier price change (12.247549ms)
+✔ HTTP rejects malformed JSON and invalid constraints cleanly (12.794077ms)
+✔ HTTP refuses cross-origin mutations, non-JSON bodies, and oversized input (8.329116ms)
+✔ HTTP does not expose runtime state files or source files (8.034911ms)
+✔ HTTP rejects unrelated Host authorities to resist DNS rebinding (5.677806ms)
+✔ UI builds a plan, requires an explicit checkbox, and executes the approved simulation (230.561593ms)
+✔ UI close/back from approval leaves provider state unchanged (48.909428ms)
+✔ UI changed constraints hide execution until a new plan and approval (80.895634ms)
+✔ UI safely resumes after a lost response, and a new page restores the checkpoint (99.651035ms)
+✔ UI price change invalidates approval and allows refreshing and reapproving (89.789475ms)
+✔ UI blocked constraints do not offer approval, reset restores an operable empty state (52.77236ms)
+✔ UI escapes provider and event text instead of inserting HTML (27.574882ms)
+✔ UI describes the hotel hold as proposed until a receipt confirms it (51.643431ms)
+✔ UI labels a same-night arrival correctly (29.387823ms)
+✔ UI locks boundaries while planning and prevents duplicate clicks (30.381723ms)
+✔ UI recovers a discarded successful HTTP response by checking saved state (64.482445ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1502.816031

@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-10-02T04:34:33.448Z",
+  "disclosure": "Actual CLI subprocesses, forced process exit, durable state and official MCP HTTP calls. All travel and approvals are synthetic fixtures. No browser rendering, video or Alexa integration is claimed.",
+  "stages": [
+    {
+      "name": "unknown-outcome-saved",
+      "processId": 294,
+      "status": "needs-retry",
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreates": 1,
+        "transferLookups": 0
+      },
+      "approvalSource": "automated HTTP fixture, not a human or MCP approval tool"
+    },
+    {
+      "name": "actual-process-killed",
+      "processId": 294,
+      "exit": {
+        "code": null,
+        "signal": "SIGKILL"
+      }
+    },
+    {
+      "name": "new-process-restored",
+      "processId": 302,
+      "status": "needs-retry",
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreates": 1,
+        "transferLookups": 0
+      }
+    },
+    {
+      "name": "reconciled-without-duplicate",
+      "processId": 302,
+      "status": "completed",
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreates": 1,
+        "transferLookups": 1
+      },
+      "receipts": [
+        "HT-REC-0001",
+        "FL-REC-0001",
+        "GR-REC-0001"
+      ],
+      "originalReservation": "confirmed",
+      "originalTicket": "preserved"
+    }
+  ],
+  "success": true
+}

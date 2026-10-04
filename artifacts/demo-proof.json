@@ -1,0 +1,273 @@
+{
+  "generatedAt": "2026-10-02T04:35:52.213Z",
+  "disclosure": "Actual official-SDK MCP and HTTP run. All suppliers, faults, money and approval decisions are synthetic test fixtures. No human approval, browser screen recording, Alexa integration or LLM call is claimed.",
+  "steps": [
+    {
+      "index": 1,
+      "title": "Initialized official MCP client and discovered tools",
+      "protocol": "2025-11-25",
+      "toolNames": [
+        "get_recovery_state",
+        "plan_recovery",
+        "execute_recovery"
+      ],
+      "approvalTool": false
+    },
+    {
+      "index": 2,
+      "title": "Planned one connected recovery",
+      "version": 1,
+      "total": 234,
+      "arrival": "2026-10-23T00:45:00-07:00",
+      "counts": {
+        "hotel": 0,
+        "flights": 0,
+        "transfers": 0,
+        "transferCreateRequests": 0,
+        "transferLookups": 0
+      }
+    },
+    {
+      "index": 3,
+      "title": "Execution without approval was blocked",
+      "code": "APPROVAL_REQUIRED",
+      "counts": {
+        "hotel": 0,
+        "flights": 0,
+        "transfers": 0,
+        "transferCreateRequests": 0,
+        "transferLookups": 0
+      }
+    },
+    {
+      "index": 4,
+      "title": "Synthetic approval fixture applied through the separate HTTP workflow",
+      "planVersion": 1,
+      "limit": 234,
+      "source": "automated test fixture, not an MCP tool or a real human decision"
+    },
+    {
+      "index": 5,
+      "title": "Supplier saved one transfer but its response was lost",
+      "status": "needs-retry",
+      "steps": [
+        {
+          "id": "hotel",
+          "status": "confirmed",
+          "receipt": "HT-REC-0001"
+        },
+        {
+          "id": "flight",
+          "status": "confirmed",
+          "receipt": "FL-REC-0001"
+        },
+        {
+          "id": "ground",
+          "status": "unknown",
+          "receipt": null
+        }
+      ],
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreateRequests": 1,
+        "transferLookups": 0
+      }
+    },
+    {
+      "index": 6,
+      "title": "Restarted HTTP app and reconstructed engine from disk",
+      "status": "needs-retry",
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreateRequests": 1,
+        "transferLookups": 0
+      },
+      "restartBoundary": "new HTTP server and RecoveryEngine instance; same Node process"
+    },
+    {
+      "index": 7,
+      "title": "Reconciled the existing transfer without creating another",
+      "status": "completed",
+      "receipts": [
+        "HT-REC-0001",
+        "FL-REC-0001",
+        "GR-REC-0001"
+      ],
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreateRequests": 1,
+        "transferLookups": 1
+      }
+    },
+    {
+      "index": 8,
+      "title": "Repeated execution leaves supplier counts unchanged",
+      "counts": {
+        "hotel": 1,
+        "flights": 1,
+        "transfers": 1,
+        "transferCreateRequests": 1,
+        "transferLookups": 1
+      }
+    },
+    {
+      "index": 9,
+      "title": "Synthetic approval fixture applied through the separate HTTP workflow",
+      "planVersion": 2,
+      "limit": 234,
+      "source": "automated test fixture, not an MCP tool or a real human decision"
+    },
+    {
+      "index": 10,
+      "title": "Transfer repricing requires a new plan and fresh consent",
+      "oldVersion": 2,
+      "newVersion": 3,
+      "newTotal": 269,
+      "oldApprovalStatus": "invalidated",
+      "counts": {
+        "hotel": 0,
+        "flights": 0,
+        "transfers": 0,
+        "transferCreateRequests": 0,
+        "transferLookups": 0
+      }
+    }
+  ],
+  "httpExchanges": [
+    {
+      "sequence": 1,
+      "method": "initialize",
+      "tool": null,
+      "status": 200,
+      "protocolVersion": "2025-11-25",
+      "isError": false
+    },
+    {
+      "sequence": 2,
+      "method": "notifications/initialized",
+      "tool": null,
+      "status": 202,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 3,
+      "method": "notification",
+      "tool": null,
+      "status": 405,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 4,
+      "method": "tools/list",
+      "tool": null,
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 5,
+      "method": "tools/call",
+      "tool": "plan_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 6,
+      "method": "tools/call",
+      "tool": "execute_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": true
+    },
+    {
+      "sequence": 7,
+      "method": "tools/call",
+      "tool": "execute_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": true
+    },
+    {
+      "sequence": 8,
+      "method": "initialize",
+      "tool": null,
+      "status": 200,
+      "protocolVersion": "2025-11-25",
+      "isError": false
+    },
+    {
+      "sequence": 9,
+      "method": "notifications/initialized",
+      "tool": null,
+      "status": 202,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 10,
+      "method": "notification",
+      "tool": null,
+      "status": 405,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 11,
+      "method": "tools/call",
+      "tool": "get_recovery_state",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 12,
+      "method": "tools/call",
+      "tool": "execute_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 13,
+      "method": "tools/call",
+      "tool": "execute_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 14,
+      "method": "tools/call",
+      "tool": "plan_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    },
+    {
+      "sequence": 15,
+      "method": "tools/call",
+      "tool": "execute_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": true
+    },
+    {
+      "sequence": 16,
+      "method": "tools/call",
+      "tool": "plan_recovery",
+      "status": 200,
+      "protocolVersion": null,
+      "isError": false
+    }
+  ],
+  "success": true
+}
